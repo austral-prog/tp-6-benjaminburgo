@@ -1,29 +1,22 @@
-def remove_elements(list_to_remove_elements):
-    if len(list_to_remove_elements) > 5:
-        del list_to_remove_elements[5]
-    if len(list_to_remove_elements) > 4:
-        del list_to_remove_elements[4]
-    if len(list_to_remove_elements) > 0:
-        del list_to_remove_elements[0]
-    return list_to_remove_elements
+def remove_elements(lst):
+    if 'Red' in lst:
+        lst.remove('Red')
+    if 'Pink' in lst:
+        lst.remove('Pink')
+    if 'Yellow' in lst:
+        lst.remove('Yellow')
+    return lst
 
+def add_elements(lst):
+    lst.insert(0, 'Pink')
+    lst.append('Yellow')
+    return lst
 
-def add_elements(list_to_add_elements):
-    list_to_add_elements.insert(0, "Pink")
-    list_to_add_elements.append("Yellow")
-    return list_to_add_elements
+def is_empty(lst):
+    return len(lst) == 0
 
-
-def is_empty(list_to_check):
-    return len(list_to_check) == 0
-
-
-def check_lists(list_to_compare1, list_to_compare2):
-    if len(list_to_compare1) > 2 and len(list_to_compare2) > 2:
-        return list_to_compare1[2] == list_to_compare2[2]
-    else:
-        return False
-
+def check_lists(lst1, lst2):
+    return sorted(lst1) == sorted(lst2)
 
 def list_of_lists(list_of_lists_to_modify):
     if len(list_of_lists_to_modify[0]) >= 2:
@@ -42,6 +35,7 @@ def list_of_lists(list_of_lists_to_modify):
         list_of_lists_to_modify[2] = []
 
     return list_of_lists_to_modify
+
 
 
 
