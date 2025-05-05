@@ -1,10 +1,10 @@
 def remove_elements(list_to_remove_elements):
+    if len(list_to_remove_elements) > 5:
+        del list_to_remove_elements[5]
+    if len(list_to_remove_elements) > 4:
+        del list_to_remove_elements[4]
     if len(list_to_remove_elements) > 0:
         del list_to_remove_elements[0]
-    if len(list_to_remove_elements) > 4:
-        del list_to_remove_elements[3]
-    if len(list_to_remove_elements) > 5:
-        del list_to_remove_elements[4]
     return list_to_remove_elements
 
 
@@ -42,6 +42,7 @@ def list_of_lists(list_of_lists_to_modify):
         list_of_lists_to_modify[2] = []
 
     return list_of_lists_to_modify
+
 
 
 
